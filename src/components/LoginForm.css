@@ -1,0 +1,554 @@
+.wiki-login-bg {
+  background: #fff;
+  min-height: 100vh;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  font-family: 'Segoe UI', 'Liberation Sans', Arial, sans-serif;
+}
+
+.wiki-login-container {
+  margin-top: 48px;
+  background: #fff;
+  border: 1px solid #a2a9b1;
+  border-radius: 2px;
+  width: 420px;
+  padding: 32px 32px 24px 32px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+}
+
+.wiki-login-title {
+  font-size: 2rem;
+  font-weight: 400;
+  margin: 0 0 8px 0;
+  color: #202122;
+  font-family: 'Linux Libertine', 'Georgia', serif;
+}
+
+.wiki-login-divider {
+  border: none;
+  border-top: 1px solid #c8ccd1;
+  margin: 8px 0 16px 0;
+}
+
+.wiki-login-info {
+  font-size: 1rem;
+  color: #202122;
+  margin-bottom: 8px;
+}
+
+.wiki-login-info a {
+  color: #36c;
+  text-decoration: none;
+}
+
+.wiki-login-info a:hover {
+  text-decoration: underline;
+}
+
+.wiki-login-langs {
+  font-size: 0.95rem;
+  color: #54595d;
+  margin-bottom: 18px;
+}
+
+.wiki-login-langs a {
+  color: #36c;
+  text-decoration: none;
+  margin: 0 2px;
+}
+
+.wiki-login-langs a:hover {
+  text-decoration: underline;
+}
+
+.wiki-login-form {
+  margin-bottom: 12px;
+}
+
+.wiki-form-group {
+  margin-bottom: 16px;
+  display: flex;
+  flex-direction: column;
+}
+
+.wiki-form-group label {
+  font-size: 1rem;
+  color: #202122;
+  margin-bottom: 4px;
+}
+
+.wiki-form-group input[type="text"],
+.wiki-form-group input[type="password"] {
+  font-size: 1rem;
+  padding: 8px;
+  border: 1px solid #a2a9b1;
+  border-radius: 2px;
+  background: #fff;
+  transition: border 0.2s;
+}
+
+.wiki-form-group input[type="text"]:focus,
+.wiki-form-group input[type="password"]:focus {
+  border-color: #36c;
+  outline: none;
+}
+
+.wiki-checkbox-group {
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.wiki-checkbox-group input[type="checkbox"] {
+  margin-right: 6px;
+}
+
+.wiki-login-btn {
+  width: 100%;
+  background: #3366cc;
+  color: #fff;
+  border: none;
+  border-radius: 2px;
+  padding: 10px 0;
+  font-size: 1.1rem;
+  font-weight: 500;
+  cursor: pointer;
+  margin-bottom: 8px;
+  transition: background 0.2s;
+}
+
+.wiki-login-btn:hover {
+  background: #447ff5;
+}
+
+.wiki-login-links {
+  text-align: left;
+  margin-bottom: 18px;
+  font-size: 0.97rem;
+}
+
+.wiki-login-links a {
+  color: #36c;
+  text-decoration: none;
+}
+
+.wiki-login-links a:hover {
+  text-decoration: underline;
+}
+
+.wiki-login-cta {
+  margin-top: 24px;
+  text-align: left;
+}
+
+.wiki-login-cta-text {
+  color: #54595d;
+  margin-bottom: 6px;
+  font-size: 1rem;
+}
+
+.wiki-login-cta-btn {
+  display: inline-block;
+  padding: 7px 18px;
+  border: 1px solid #3366cc;
+  border-radius: 2px;
+  color: #3366cc;
+  background: #f8f9fa;
+  font-size: 1rem;
+  font-weight: 500;
+  text-decoration: none;
+  transition: background 0.2s, color 0.2s;
+}
+
+.wiki-login-cta-btn:hover {
+  background: #eaf3ff;
+  color: #447ff5;
+}
+
+
+/* Estilos generales de la página */
+.wiki-global-bg {
+  background: #fff;
+  min-height: 100vh;
+  font-family: 'Segoe UI', 'Liberation Sans', Arial, sans-serif;
+}
+
+/* Header */
+.wiki-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #c8ccd1;
+  padding: 12px 32px 12px 24px;
+  background: #fff;
+}
+
+.wiki-header-left {
+  display: flex;
+  align-items: center;
+}
+
+.wiki-logo-link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.wiki-logo {
+  width: 44px;
+  height: 44px;
+  margin-right: 10px;
+}
+
+.wiki-logo-text {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.1;
+}
+
+.wiki-logo-title {
+  font-family: 'Linux Libertine', 'Georgia', serif;
+  font-size: 1.6rem;
+  color: #202122;
+  font-weight: 400;
+}
+
+.wiki-logo-sub {
+  font-size: 0.95rem;
+  color: #54595d;
+}
+
+.wiki-header-center {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.wiki-search-form {
+  display: flex;
+  align-items: center;
+}
+
+.wiki-search-input {
+  font-size: 1rem;
+  padding: 6px 10px;
+  border: 1px solid #a2a9b1;
+  border-radius: 2px 0 0 2px;
+  width: 260px;
+  background: #fff;
+}
+
+.wiki-search-btn {
+  background: #f8f9fa;
+  border: 1px solid #a2a9b1;
+  border-left: none;
+  border-radius: 0 2px 2px 0;
+  padding: 6px 16px;
+  font-size: 1rem;
+  color: #202122;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.wiki-search-btn:hover {
+  background: #eaf3ff;
+}
+
+.wiki-header-right {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.wiki-header-link {
+  color: #36c;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+.wiki-header-link:hover {
+  text-decoration: underline;
+}
+
+/* Main content */
+.wiki-main {
+  display: flex;
+  justify-content: flex-start;
+  padding: 32px 0 0 64px;
+}
+
+.wiki-login-content {
+  max-width: 420px;
+  width: 100%;
+}
+
+/* --- El resto de estilos de tu formulario --- */
+.wiki-login-title {
+  font-size: 2.2rem;
+  font-weight: 400;
+  margin: 0 0 8px 0;
+  color: #202122;
+  font-family: 'Linux Libertine', 'Georgia', serif;
+}
+
+.wiki-login-divider {
+  border: none;
+  border-top: 1px solid #c8ccd1;
+  margin: 8px 0 16px 0;
+}
+
+.wiki-login-info {
+  font-size: 1rem;
+  color: #202122;
+  margin-bottom: 8px;
+}
+
+.wiki-login-info a {
+  color: #36c;
+  text-decoration: none;
+}
+
+.wiki-login-info a:hover {
+  text-decoration: underline;
+}
+
+.wiki-login-langs {
+  font-size: 0.95rem;
+  color: #54595d;
+  margin-bottom: 18px;
+}
+
+.wiki-login-langs a {
+  color: #36c;
+  text-decoration: none;
+  margin: 0 2px;
+}
+
+.wiki-login-langs a:hover {
+  text-decoration: underline;
+}
+
+.wiki-login-form {
+  margin-bottom: 12px;
+}
+
+.wiki-form-group {
+  margin-bottom: 16px;
+  display: flex;
+  flex-direction: column;
+}
+
+.wiki-form-group label {
+  font-size: 1rem;
+  color: #202122;
+  margin-bottom: 4px;
+}
+
+.wiki-form-group input[type="text"],
+.wiki-form-group input[type="password"] {
+  font-size: 1rem;
+  padding: 8px;
+  border: 1px solid #a2a9b1;
+  border-radius: 2px;
+  background: #fff;
+  transition: border 0.2s;
+}
+
+.wiki-form-group input[type="text"]:focus,
+.wiki-form-group input[type="password"]:focus {
+  border-color: #36c;
+  outline: none;
+}
+
+.wiki-checkbox-group {
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.wiki-checkbox-group input[type="checkbox"] {
+  margin-right: 6px;
+}
+
+.wiki-login-btn {
+  width: 100%;
+  background: #3366cc;
+  color: #fff;
+  border: none;
+  border-radius: 2px;
+  padding: 10px 0;
+  font-size: 1.1rem;
+  font-weight: 500;
+  cursor: pointer;
+  margin-bottom: 8px;
+  transition: background 0.2s;
+}
+
+.wiki-login-btn:hover {
+  background: #447ff5;
+}
+
+.wiki-login-links {
+  text-align: left;
+  margin-bottom: 18px;
+  font-size: 0.97rem;
+}
+
+.wiki-login-links a {
+  color: #36c;
+  text-decoration: none;
+}
+
+.wiki-login-links a:hover {
+  text-decoration: underline;
+}
+
+.wiki-login-cta-box {
+  margin-top: 40px;
+  border: 1px solid #a2a9b1;
+  border-radius: 2px;
+  background: #f8f9fa;
+  padding: 0 0 16px 0;
+  width: 320px;
+  position: relative;
+  overflow: hidden;
+}
+
+.wiki-login-cta-img {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  height: 90px;
+  opacity: 0.18;
+  margin-bottom: -24px;
+}
+
+.wiki-login-cta-img img {
+  width: 90px;
+  height: 90px;
+  object-fit: contain;
+}
+
+.wiki-login-cta-bottom {
+  position: relative;
+  z-index: 2;
+  text-align: left;
+  padding: 0 16px;
+}
+
+.wiki-login-cta-text {
+  color: #202122;
+  margin-bottom: 6px;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.wiki-login-cta-btn {
+  display: inline-block;
+  padding: 7px 18px;
+  border: 1px solid #3366cc;
+  border-radius: 2px;
+  color: #3366cc;
+  background: #fff;
+  font-size: 1rem;
+  font-weight: 500;
+  text-decoration: none;
+  transition: background 0.2s, color 0.2s;
+}
+
+.wiki-login-cta-btn:hover {
+  background: #eaf3ff;
+  color: #447ff5;
+}
+
+/* Barra lateral de Apariencia */
+.wiki-main {
+  display: flex;
+  justify-content: flex-start;
+  padding: 32px 0 0 64px;
+  position: relative;
+  align-items: flex-start;
+}
+
+.wiki-login-content {
+  max-width: 420px;
+  width: 100%;
+}
+
+.wiki-sidebar {
+  position: fixed;
+  top: 90px; /* Ajusta según la altura de tu header */
+  right: 0;
+  min-width: 260px;
+  max-width: 260px;
+  background: #fff;
+  border-left: 1px solid #c8ccd1;
+  padding: 24px 20px 24px 24px;
+  font-family: 'Segoe UI', 'Liberation Sans', Arial, sans-serif;
+  color: #202122;
+  min-height: 400px;
+  height: fit-content;
+  z-index: 10;
+  box-shadow: 0 0 8px 0 rgba(0,0,0,0.03);
+}
+
+.wiki-sidebar-section {
+  width: 100%;
+}
+
+.wiki-sidebar-title {
+  font-weight: bold;
+  font-size: 1.05rem;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.wiki-sidebar-hide {
+  background: none;
+  border: none;
+  color: #54595d;
+  font-size: 0.9rem;
+  cursor: pointer;
+  margin-left: 8px;
+  padding: 0;
+}
+
+.wiki-sidebar-group {
+  margin-bottom: 18px;
+}
+
+.wiki-sidebar-label {
+  font-size: 0.98rem;
+  color: #202122;
+  margin-bottom: 4px;
+  font-weight: 500;
+}
+
+.wiki-sidebar-group label {
+  display: block;
+  font-size: 0.97rem;
+  color: #202122;
+  margin: 2px 0 2px 0;
+  cursor: pointer;
+}
+
+.wiki-sidebar-group input[type="radio"] {
+  accent-color: #3366cc;
+  margin-right: 6px;
+}
+
+.wiki-sidebar-note {
+  font-size: 0.92rem;
+  color: #54595d;
+  margin-top: 4px;
+}
+
+.wiki-login-content {
+  max-width: 420px;
+  width: 100%;
+  margin-right: 320px; /* deja espacio para la barra lateral */
+}
